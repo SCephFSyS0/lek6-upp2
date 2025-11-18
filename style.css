@@ -1,0 +1,80 @@
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 10vh 10vh 70vh 10vh;
+    align-items: stretch;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+.logo img {
+    height: 75px;
+}
+
+header {
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: black;
+    color: white;
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+aside {
+    grid-area: 2 / 1 / 5 / 2;
+    border: 3px solid black;
+    border-radius: 5px;
+    background-image: url(./img/dragon_side.png);
+    background-repeat: no-repeat;
+}
+
+nav {
+    grid-area: 2 / 2 / 3 / 3;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+main {
+    grid-area: 3 / 2 / 4 / 3;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px 30px;
+    align-items: stretch;
+}
+
+main img {
+    max-width: 100%;;
+    height: auto;
+}
+
+footer {
+    grid-area: 4 / 2 / 5 / 3;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    a {
+        color: white;
+        margin-top: 20px;
+    }
+}
