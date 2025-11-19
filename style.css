@@ -2,7 +2,7 @@
 body {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: 10vh 10vh 70vh 10vh;
+    grid-template-rows: 10vh 10vh auto 10vh;
     align-items: stretch;
 }
 
@@ -18,11 +18,16 @@ body {
     height: 75px;
 }
 
+.border {
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
 header {
     grid-area: 1 / 2 / 2 / 3;
     background-color: black;
     color: white;
-    margin: 5px;
+    margin: 3px;
     border-radius: 5px;
     display: flex;
     justify-content: center;
@@ -39,7 +44,7 @@ aside {
 
 nav {
     grid-area: 2 / 2 / 3 / 3;
-    margin: 5px;
+    margin: 3px;
     border-radius: 5px;
     background-color: black;
     display: flex;
@@ -57,18 +62,20 @@ main {
     background-color: black;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px 30px;
+    gap: 20px 50px;
+    margin: 3px;
+    margin-right: 5px;
     align-items: stretch;
 }
 
 main img {
-    max-width: 100%;;
+    width: 100%;;
     height: auto;
 }
 
 footer {
     grid-area: 4 / 2 / 5 / 3;
-    margin: 5px;
+    margin: 3px;
     border-radius: 5px;
     background-color: black;
     display: flex;
